@@ -42,29 +42,34 @@ footer {
 }
 
 .container {
-
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: auto auto;
     gap: 5%;
     justify-content: center;
+    width: 100%;
+    margin: 0 auto;
     margin-top: 100px;
 
 }
 .item {
     /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .item img {
-    width: 100%;
+    width: 160px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .description {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 0;
 }
 
 

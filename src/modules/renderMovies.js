@@ -8,9 +8,6 @@ const getJSON = async () => {
 };
 
 
-
-getJSON()
-
 const render = async () => {
   const container = document.querySelector(".container");
   const jsonData = await getJSON();
@@ -18,7 +15,7 @@ const render = async () => {
   for (let i = 0; i < 6; i++) {
     item += `
      <div class="item">
-            <img src=${jsonData[i].image.medium} alt="">
+            <img src=${jsonData[i].image.original} alt="">
 
             <div class="description">
                 <p class="name">${jsonData[i].name}</p>
