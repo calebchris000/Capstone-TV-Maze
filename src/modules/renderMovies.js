@@ -8,6 +8,7 @@ const getJSON = async () => {
 };
 
 
+
 const render = async () => {
   const container = document.querySelector(".container");
   const jsonData = await getJSON();
@@ -28,13 +29,16 @@ const render = async () => {
 
             </div>
 
-            <button>Comment</button>
-            <button>Reservation</button>
+            <button id="comment" onclick="toggleComment(${i})">Comment</button>
+            <div class="comment-container"></div>
+            <button id="reservation">Reservation</button>
+            <div class="reservation-container"></div>
         </div>`
   }
 
   container.innerHTML = item;
 };
+
 
 render()
 
