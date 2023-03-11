@@ -1,7 +1,10 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 
 body {
     padding: 3% 10%;
@@ -31,4 +34,52 @@ footer {
     right: 0;
     border: 3px solid black;
     padding: 0 4%;
+    background-color: white;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.item {
+    /* background-color: black; */
+}
+
+.item img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.like p {
+    margin: 0;
+    padding: 0;
+}
+
+.item button {
+    width: 100%;
 }
