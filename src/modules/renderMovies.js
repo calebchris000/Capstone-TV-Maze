@@ -29,9 +29,8 @@ const render = async () => {
 
             </div>
 
-            <button id="comment" onclick="toggleComment(${i})">Comment</button>
-            <div class="comment-container"></div>
-            <button id="reservation">Reservation</button>
+            <button class="comment comment${i}">Comment</button>
+            <button class="reservation">Reservation</button>
             <div class="reservation-container"></div>
         </div>`
   }
