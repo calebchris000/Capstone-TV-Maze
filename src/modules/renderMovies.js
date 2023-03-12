@@ -28,10 +28,9 @@ const render = async () => {
 
 
             </div>
-
+            
             <button class="${i}">Comment</button>
             <button class="reservation">Reservation</button>
-            <div class="reservation-container"></div>
         </div>`
   }
 
