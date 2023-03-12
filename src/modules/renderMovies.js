@@ -1,18 +1,16 @@
-const baseAPI = "https://api.tvmaze.com/shows";
+const baseAPI = 'https://api.tvmaze.com/shows';
 
 const getJSON = async () => {
   const request = await fetch(baseAPI);
   const response = await request.json();
 
-  return response
+  return response;
 };
 
-
-
 const render = async () => {
-  const container = document.querySelector(".container");
+  const container = document.querySelector('.container');
   const jsonData = await getJSON();
-    let item = ''
+  let item = '';
   for (let i = 0; i < 6; i++) {
     item += `
      <div class="item">
@@ -25,18 +23,14 @@ const render = async () => {
                     <i class="fa-regular fa-heart"></i>
                     <p>5 likes</p>
                 </div>
-
-
             </div>
             
             <button class="${i}">Comment</button>
             <button class="reservation">Reservation</button>
-        </div>`
+        </div>`;
   }
 
   container.innerHTML = item;
 };
 
-
-render()
-
+render();
